@@ -1,5 +1,11 @@
 <!doctype html>
 <html>
-  <head><meta charset="utf-8"><title>Hello</title></head>
-  <body><h1>Hello from Apache on Heroku (via PHP buildpack)</h1></body>
+  <head>
+      <meta charset="utf-8">
+      <title>St. Hilary Church - Making Jesus Matter to Everyone</title>
+      <script id="MPWidgets" src="https://mp.sthilary.org/widgets/dist/MPWidgets.js"></script>
+      </head>
+  <body>
+   <mpp-custom-form></mpp-custom-form>   
+   </body>
 </html>
