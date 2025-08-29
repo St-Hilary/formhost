@@ -1,6 +1,6 @@
 <?php
-// CORS Proxy for mp.sthilary.org
-// This script forwards requests to mp.sthilary.org and returns the response
+// CORS Proxy for mpi.ministryplatform.com
+// This script forwards requests to mpi.ministryplatform.com and returns the response
 
 // Allow requests from any origin
 header('Access-Control-Allow-Origin: *');
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 // Get the target URL from the query parameter
 $targetUrl = isset($_GET['url']) ? $_GET['url'] : '';
 
-// Validate the URL to ensure it's pointing to mp.sthilary.org
+// Validate the URL to ensure it's pointing to mpi.ministryplatform.com
 if (empty($targetUrl) || !preg_match('/^https?:\/\/mp\.sthilary\.org/', $targetUrl)) {
     header('HTTP/1.1 400 Bad Request');
     echo json_encode(['error' => 'Invalid or missing target URL']);
