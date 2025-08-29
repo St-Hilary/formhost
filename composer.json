@@ -1,3 +1,10 @@
-{}
+{
+  "require": {},
+  "config": {
+    "vendor-dir": "vendor",
+    "bin-dir": "vendor/bin",
+    "document-root": "public"
+  }
+}
 
 
