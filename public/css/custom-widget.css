@@ -130,7 +130,7 @@
 /* Login                                      */
 /*--------------------------------------------*/
 :host {
-    --component-bgColor: #ef8903;
+    --component-bgColor: #000000;
 }
 
 .mppw-login--container {
