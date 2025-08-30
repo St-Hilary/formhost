@@ -97,7 +97,7 @@
     --innerPage-textColor: #63656a;
     --innerPage-fontSize: 18px;
     --innerPage-lineHeight: 34px;
-    --innerPage-primaryColor: #ef8903;
+    --innerPage-primaryColor: #000000;
     --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --innerPage-borderRadius: 4px;
     /* headers */
@@ -107,7 +107,7 @@
     --innerPage-h2lineHeight: 40px;
     --innerPage-h3fontSize: 20px;
     --innerPage-h3lineHeight: 28px;
-    --innerPage-h3color: #ef8903;
+    --innerPage-h3color: #000000;
     --innerPage-h4fontSize: 18px;
     --innerPage-h4lineHeight: 24px;
     --innerPage-dateTimeFontSize: 28px;
