@@ -80,7 +80,7 @@
     --form-field-bgcolor: #f9f9f9;
     --form-field-bgcolor--active: #f6f7f9;
     --form-field-border: #b4c5cf;
-    --form-field-border--active: #ef8903;
+    --form-field-border--active: #000000;
     --form-field-boxshadow--active: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     --form-field-boxshadow--valid: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
     --form-field-boxshadow--invalid: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
