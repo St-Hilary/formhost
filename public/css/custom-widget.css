@@ -10,10 +10,10 @@
 */
 
 :host {
-    --root-text-color: #63656a;
+    --root-text-color: #84B6A1;
     --root-font-size: 14px;
     --root-line-height: 24px;
-    --primary: #ef8903;
+    --primary: #84B6A1;
     --secondary: #8084c0;
     --form-field-bgcolor: #f9f9f9;
     --form-field-border: #63656a;
