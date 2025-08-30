@@ -7,6 +7,6 @@
       </head>
   <body>
       <img src="/img/sthilary.png" width="128" height="128" />
-   <mpp-custom-form></mpp-custom-form>
+   <mpp-custom-form customcss="https://forms.sthilary.org/css/custom-widget.css"></mpp-custom-form>
    </body>
 </html>

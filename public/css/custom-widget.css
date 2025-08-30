@@ -1,0 +1,361 @@
+/*--------------------------------------------*/
+/* CSS Color Variables                        */
+/*--------------------------------------------*/
+
+/*
+  MS Church Colors:
+    Primary Orange - #ef8903
+    Primary Purple - #8084c0
+    Primary Grey - #63656a
+*/
+
+:host {
+    --root-text-color: #63656a;
+    --root-font-size: 14px;
+    --root-line-height: 24px;
+    --primary: #ef8903;
+    --secondary: #8084c0;
+    --form-field-bgcolor: #f9f9f9;
+    --form-field-border: #63656a;
+    --form-field-border--active: #ef8903;
+    --form-valid: #42bc34;
+    --form-invalid: #dc3545;
+    --form-btn-primary-text: #fff;
+    --form-btn-primary-bgcolor: #8084c0;
+    --form-btn-primary-hover: #ef8903;
+    --form-btn-primary-active: #c26f02;
+    --form-btn-secondary-text: #384249;
+    --form-btn-secondary-bgcolor: #fff;
+    --form-btn-secondary-hover: #f6f7f9;
+    --form-btn-secondary-active: #ededed;
+    --form-btn-disabled: #657783;
+    --card-bgcolor: #fff;
+    --card-title-color: #696969;
+    --card-header-bgcolor: #6c757d;
+    --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    --progress-pledged: #ef8903;
+    --progress-received: #000;
+    --root-font-face: "Lato", Helvetica, Arial, sans-serif;
+}
+
+/*--------------------------------------------*/
+/* Card                                       */
+/*--------------------------------------------*/
+:host {
+    --card-textColor: #63656a;
+    --card-borderRadius: 4px;
+    --card-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    --card-primaryColor: #ef8903;
+    --card-badgeBgColor: var(--card-textColor);
+    --card-headerBgColor: #63656a;
+    --card-badgeStatusActiveColor: var(--card-primaryColor);
+    --card-badgeStatusPendingColor: #f0d030;
+    --card-badgeStatusDiscontinuedColor: #ededed;
+    --card-badgeStatusCompleteColor: #77be43;
+    --card-fontSize: 14px;
+    --card-fontSizeHeader: 18px;
+    --card-lineHeight: 24px;
+    --card-progressBarColor: #8084c0;
+    --card-progressBarActiveColor: linear-gradient(
+            90deg,
+            #8084c0 0%,
+            #555ed9 100%
+    );
+    --card-progressBarRemainingColor: #efefef;
+    --card-progressBarCompleteColor: #77be43;
+    --card-imageBgColor: #ef8903;
+    --card-checkboxDefaultColor: #8084c0;
+    --card-labelBgColor: #efefef;
+}
+
+/*--------------------------------------------*/
+/* Form                                       */
+/*--------------------------------------------*/
+:host {
+    --form-field-color: #657783;
+    --form-field-fontFamily: var(--root-font-face);
+    --form-field-margin: 8px;
+    --form-field-borderradius: 4px;
+    --form-field-padding: 20px 13px;
+    --form-field-bgcolor: #f9f9f9;
+    --form-field-bgcolor--active: #f6f7f9;
+    --form-field-border: #b4c5cf;
+    --form-field-border--active: #ef8903;
+    --form-field-boxshadow--active: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    --form-field-boxshadow--valid: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    --form-field-boxshadow--invalid: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    --form-valid: #28a745;
+    --form-invalid: #dc3545;
+    --form-field-disabled: #ebebe4;
+}
+
+/*--------------------------------------------*/
+/* Inner Page Details                         */
+/*--------------------------------------------*/
+:host {
+    --innerPage-bgColor: #8084c0;
+    --innerPage-textColor: #63656a;
+    --innerPage-fontSize: 18px;
+    --innerPage-lineHeight: 34px;
+    --innerPage-primaryColor: #ef8903;
+    --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    --innerPage-borderRadius: 4px;
+    /* headers */
+    --innerPage-h1fontSize: 70px;
+    --innerPage-h1lineHeight: 70px;
+    --innerPage-h2fontSize: 40px;
+    --innerPage-h2lineHeight: 40px;
+    --innerPage-h3fontSize: 20px;
+    --innerPage-h3lineHeight: 28px;
+    --innerPage-h3color: #ef8903;
+    --innerPage-h4fontSize: 18px;
+    --innerPage-h4lineHeight: 24px;
+    --innerPage-dateTimeFontSize: 28px;
+    --innerPage-buttonBgColor: var(--innerPage-primaryColor);
+    --innerPage-buttonHoverBgColor: var(--form-btn-primary-hover);
+    --innerPage-buttonActiveBgColor: var(--form-btn-primary-bgcolor);
+    --innerPage-progressBarColor: var(--card-progressBarColor);
+    --innerPage-progressBarActiveColor: var(--card-progressBarActiveColor);
+    --innerPage-progressBarRemainingColor: var(--card-progressBarRemainingColor);
+    --innerPage-progressBarCompleteColor: var(--card-progressBarCompleteColor);
+    --innerPage-labelBgColor: #efefef;
+    --innerPage-linkColor: #ef8903;
+    --innerPage-linkHoverColor: #8084c0;
+    --innerPage-linkActiveColor: #555781;
+    --innerPage-imageBgColor: #ef8903;
+    --innerPage-mapBgColor: #efefef;
+}
+
+/*--------------------------------------------*/
+/* Login                                      */
+/*--------------------------------------------*/
+:host {
+    --component-bgColor: #ef8903;
+}
+
+.mppw-login--container {
+    color: #ef8903 !important;
+}
+
+.mppw-login--container:hover,
+.mppw-login--container:focus {
+    color: #8084c0;
+}
+
+.mppw-login--container:active {
+    color: #555781;
+}
+
+.mppw-loggedout--username {
+    color: #ef8903;
+}
+
+#userDisplayName {
+    font-size: 20px;
+}
+
+.mppw-loggedout--username:hover,
+.mppw-loggedout--username:focus {
+    color: #8084c0;
+}
+
+.mppw-loggedout--username:active {
+    color: #555781;
+}
+
+.mppw-login--list-item a:hover,
+.mppw-login--list-item a:focus {
+    background: #f6f7f9;
+    color: #ef8903;
+}
+
+.mppw-login--list-item a:active {
+    background: #ededed;
+    color: #925402;
+}
+
+.mppw-icon-person,
+.mppw-user-photo {
+    height: 30px;
+    width: 30px;
+}
+
+/*--------------------------------------------*/
+/* COMPONENT CONTAINER                        */
+/*--------------------------------------------*/
+.mppw-component-container {
+    font-family: var(--root-font-face);
+    color: var(--root-text-color);
+    line-height: initial;
+    /* MS Church Custom */
+    text-align: left;
+}
+
+/*--------------------------------------------*/
+/* Wildcard Font CSS                          */
+/*--------------------------------------------*/
+* {
+    box-sizing: border-box;
+    font-family: var(--root-font-face);
+}
+
+/*--------------------------------------------*/
+/* Custom Card Builder classes                */
+/*--------------------------------------------*/
+.mpp-card--title {
+}
+
+/* Groups cards */
+.mpp-card--subtitle.group-location {
+}
+.mpp-card--subtitle.group-meeting-day {
+}
+.mpp-card--subtitle.group-start-date {
+}
+
+/* Invoice cards */
+.mpp-card--subtitle.invoice-status {
+}
+.mpp-card--subtitle.invoice-total {
+}
+.mpp-card--subtitle.invoice-date {
+}
+
+/* Opportunity cards */
+.mpp-card--subtitle.opportunity-location {
+}
+.mpp-card--subtitle.opportunity-start-date {
+}
+
+/* Event cards */
+.mpp-card--subtitle.event-date-range {
+    text-align: left;
+}
+.mpp-card--subtitle.event-location {
+    text-align: left;
+}
+.mpp-card--description {
+    text-align: left;
+}
+
+/* MS Church Additional CSS */
+
+/* Fonts */
+.mppw-component-container h1 {
+    font-family: "Aleo", serif !important;
+    text-align: center !important;
+    font-size: 70px !important;
+    line-height: 70px !important;
+}
+
+.mppw-component-container h2 {
+    font-family: "Aleo", serif !important;
+    font-size: 40px !important;
+    line-height: 40px !important;
+}
+
+.mppw-component-container h3 {
+    font-family: "Aleo", serif !important;
+}
+
+#detailsContainer a {
+    color: #ef8903 !important;
+}
+
+/* Centering Event Graphics */
+
+.mppw-component-container {
+    margin: auto;
+}
+
+.mpp-innerpage--fixed-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.mpp-innerpage--fixed-imgcontainer {
+    width: 50% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: var(--card-boxShadow);
+}
+
+/* Mobile full width for event image */
+@media (max-width: 768px) {
+    .mpp-innerpage--fixed-imgcontainer {
+        width: 100% !important;
+        max-width: 100%;
+    }
+}
+
+/* Product Options */
+
+.product-form h3 {
+    margin: 0px !important;
+}
+
+.mppw-form-field-alt {
+    padding: 10px;
+}
+
+/* Buttons */
+
+.mppw-btn {
+    border-radius: 50px;
+    font-family: "Aleo", serif !important;
+    transition: 0.3s;
+}
+
+.mpp-innerpage--button {
+    margin: 10px;
+}
+
+/* Event Sub-titles */
+
+.mpp-innerpage--special-title {
+    font-family: "Aleo", serif !important;
+    color: #63656a;
+}
+
+/* Mobile Changes */
+
+@media only screen and (max-width: 600px) {
+    .mppw-component-container h1 {
+        font-size: 40px !important;
+        line-height: 45px !important;
+    }
+
+    .mppw-component-container h2 {
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
+
+    .mpp-card {
+        margin: 10px;
+    }
+}
+
+/* Google Map (On Event Detail) */
+
+#mapContainer {
+    width: 50%;
+    background: none;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+#mapAddress {
+    padding-top: 12px;
+    padding-left: 0px;
+}
