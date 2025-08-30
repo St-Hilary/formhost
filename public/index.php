@@ -6,6 +6,7 @@
       <script id="MPWidgets" src="https://mp.sthilary.org/widgets/dist/MPWidgets.js"></script>
       </head>
   <body>
+      <img src="/img/sthilary.png" width="128" height="128" />
    <mpp-custom-form></mpp-custom-form>
    </body>
 </html>
