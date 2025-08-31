@@ -38,6 +38,10 @@
     --root-font-face: "Lato", Helvetica, Arial, sans-serif;
 }
 
+.elig {
+    color: var(--form-field-border--active);
+}
+
 /*--------------------------------------------*/
 /* Card                                       */
 /*--------------------------------------------*/
