@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>St. Hilary Church - Making Jesus Matter to Everyone</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <img src="/img/sthilary.png" width="128" height="128" />
     <div class="main-container">
-        <h1>Forms Available:</h1>
+        <img src="/img/sthilary.png" width="128" height="128" />
+        <h1>Thank you for visiting St Hilary</h1>
+        <h3>If you have need of a service from St Hilary, please feel free to submit one of the forms below. God Bless.</h3>
         <ul>
             <li><a href="/form/?id=1E23CB89-9EB6-474E-B7F3-FB81A66DE1AE">Child Baptism Inquiry Form</a></li>
             <li><a href="/form/?id=0b3b8dc2-9212-4fa1-acc1-e5d9499485df">Child Baptism Sponsorship Certificate</a></li>
