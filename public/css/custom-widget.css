@@ -310,6 +310,10 @@ label.mppw-form-field__label {
     font-size: 16px;
 }
 
+div.mppw-form-field__alt-label-content {
+    font-size: 14px;
+}
+
 
 .mppw-form-field-alt {
     padding: 10px;
