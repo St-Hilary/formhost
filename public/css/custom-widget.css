@@ -306,9 +306,9 @@
     margin: 0px !important;
 }
 
-/*.mppw-form-field__label {*/
-/*    font-size: 20px;*/
-/*}*/
+label.mppw-form-field__label {
+    font-size: 14px;
+}
 
 
 .mppw-form-field-alt {
