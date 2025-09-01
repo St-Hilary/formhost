@@ -22,7 +22,7 @@
             <li><a href="/form/?id=07E91831-0A3E-4F13-BF68-798C3DF690A8">Become a Member</a></li>
             <li><a href="/form/?id=05382102-D18D-4DE1-8860-D85C63B2D9FA">Confession</a></li>
             <li><a href="/form/?id=5AF63399-E526-4559-8356-C074D1315B60">Join a Ministry Team</a></li>
-            <li><a href="/form/?id=66C1B67A-EEAB-424C-AC91-0FCCC239CC6B">Join a Ministry Team</a></li>
+            <li><a href="/form/?id=66C1B67A-EEAB-424C-AC91-0FCCC239CC6B">Small Groups Inquiry Form</a></li>
         </ul>
     </div>
 </body>
