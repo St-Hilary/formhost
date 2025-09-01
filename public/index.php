@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="main-container">
-        <img src="/img/sthilary.png" width="128" height="128" />
+        <a href="https://sthilary.org"><img src="/img/sthilary.png" width="128" height="128" /></a>
         <h1>Thank you for visiting St Hilary</h1>
         <h3>If you have need of a service from St Hilary, please feel free to submit one of the forms below. God Bless.</h3>
         <ul>
