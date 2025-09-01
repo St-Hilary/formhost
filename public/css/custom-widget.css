@@ -35,7 +35,7 @@
     --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --progress-pledged: #ef8903;
     --progress-received: #000;
-    --root-font-face: "Lato", Helvetica, Arial, sans-serif;
+    --root-font-face: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .elig {
@@ -246,20 +246,20 @@
 
 /* Fonts */
 .mppw-component-container h1 {
-    font-family: "Aleo", serif !important;
+    font-family: "Open Sans", serif !important;
     text-align: center !important;
     font-size: 70px !important;
     line-height: 70px !important;
 }
 
 .mppw-component-container h2 {
-    font-family: "Aleo", serif !important;
+    font-family: "Open Sans", serif !important;
     font-size: 40px !important;
     line-height: 40px !important;
 }
 
 .mppw-component-container h3 {
-    font-family: "Aleo", serif !important;
+    font-family: "Open Sans", serif !important;
 }
 
 #detailsContainer a {
@@ -333,7 +333,7 @@
 
 .mppw-btn {
     border-radius: 50px;
-    font-family: "Aleo", serif !important;
+    font-family: "Open Sans", serif !important;
     transition: 0.3s;
 }
 
@@ -344,7 +344,7 @@
 /* Event Sub-titles */
 
 .mpp-innerpage--special-title {
-    font-family: "Aleo", serif !important;
+    font-family: "Open Sans", serif !important;
     color: #63656a;
 }
 
