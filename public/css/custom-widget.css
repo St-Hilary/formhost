@@ -306,6 +306,11 @@
     margin: 0px !important;
 }
 
+.mppw-form-field__label {
+    font-size: 20px;
+}
+
+
 .mppw-form-field-alt {
     padding: 10px;
 }
