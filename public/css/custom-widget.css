@@ -310,8 +310,13 @@ label.mppw-form-field__label {
     font-size: 14px;
 }
 
+.mppw-form-field__control {
+    line-height: 40px;
+}
+
 .mppw-form-field--is-valid .mppw-form-field__label, .mppw-form-field--is-invalid .mppw-form-field__label, .mppw-form-field__static-container .mppw-form-field__label, .mppw-form-field__control:not([value=""]) + .mppw-form-field__label, .mppw-form-field__control:focus + .mppw-form-field__label {
     font-size: 14px;
+    padding: 10px;
 }
 
 
