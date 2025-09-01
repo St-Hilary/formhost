@@ -8,7 +8,7 @@
       <script id="MPWidgets" src="https://mp.sthilary.org/widgets/dist/MPWidgets.js"></script>
       </head>
   <body>
-      <img src="/img/sthilary.png" width="128" height="128" />
+      <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
    <mpp-custom-form customcss="https://forms.sthilary.org/css/custom-widget.css"></mpp-custom-form>
    </body>
 </html>
