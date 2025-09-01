@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>St. Hilary Church - Making Jesus Matter to Everyone</title>
       <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
+      <link rel="icon" type="image/ico" href="/img/favicon.ico">
       <script id="MPWidgets" src="https://mp.sthilary.org/widgets/dist/MPWidgets.js"></script>
       </head>
   <body>

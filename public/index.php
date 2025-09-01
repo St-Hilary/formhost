@@ -5,6 +5,7 @@
     <title>St. Hilary Church - Making Jesus Matter to Everyone</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/ico" href="/img/favicon.ico">
 </head>
 <body>
     <div class="main-container">
