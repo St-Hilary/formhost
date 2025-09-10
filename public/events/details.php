@@ -9,7 +9,8 @@
 </head>
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
-<mpp-event-finder targeturl="https://forms.sthilary.org/events/details.php" congregationid="1" eventtypeid="15"></mpp-event-finder>
+
+<mpp-event-details returnurl="https://forms.sthilary.org/events" checkouturl="InvoiceWidgetUrl"></mpp-event-details>
 
 </body>
 </html>
