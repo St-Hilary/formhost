@@ -10,7 +10,5 @@
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
 
-<mpp-event-details returnurl="/events/finder.php" checkouturl="/events/invoice.php"></mpp-event-details>
-
-</body>
+<mpp-opportunity-details returnurl="/events/opportunityFinder.php"></mpp-opportunity-details></body>
 </html>
