@@ -14,7 +14,7 @@
     <h3>If you have come looking for specific events, try one of these:</h3>
     <ul>
         <li><a href="/events/baptisms.php">Baptisms</a></li>
-        <li><a href="/events">All events</a></li>
+        <li><a href="/events/finder.php">All events</a></li>
     </ul>
 </div>
 </body>
