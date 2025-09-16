@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>St. Hilary Church - Making Jesus Matter to Everyone</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/ico" href="/img/favicon.ico">
+</head>
+<body>
+    <div class="main-container">
+        <a href="https://sthilary.org"><img src="/img/sthilary.png" width="128" height="128" /></a>
+        <h1>Thank you for visiting St Hilary</h1>
+        <h3>Here are groups that you can browse and join</h3>
+        <ul>
+            <li><a href="/groups/small.php">Small Groups</a></li>
+        </ul>
+    </div>
+</body>
+</html>
