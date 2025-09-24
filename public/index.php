@@ -25,6 +25,8 @@
             <li><a href="/form/?id=5AF63399-E526-4559-8356-C074D1315B60">Join a Ministry Team</a></li>
             <li><a href="/form/?id=66C1B67A-EEAB-424C-AC91-0FCCC239CC6B">Small Groups Inquiry Form</a></li>
         </ul>
+
+        <h3>Click here to see <a href="https://forms.sthilary.org/groups/small.php">groups</a></h3>
     </div>
 </body>
 </html>
