@@ -10,7 +10,7 @@
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
 
-<mpp-group-finder targeturl="/groups/details.php" congregationid="1" grouptypeid="1"></mpp-group-finder>
+<mpp-group-finder targeturl="/groups/details.php" congregationid="1" ></mpp-group-finder>
 
 </body>
 </html>
