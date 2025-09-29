@@ -10,7 +10,7 @@
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
 
-<mpp-my-groups></mpp-my-groups>
+<mpp-my-groups hidegrouplife="false"></mpp-my-groups>
 
 </body>
 </html>
