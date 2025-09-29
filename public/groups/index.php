@@ -14,6 +14,7 @@
         <h3>Here are groups that you can browse and join</h3>
         <ul>
             <li><a href="/groups/small.php">Small Groups</a></li>
+            <li><a href="/groups/mygroup.php">My Group</a></li>
         </ul>
     </div>
 </body>
