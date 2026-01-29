@@ -10,29 +10,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link rel="icon" type="image/ico" href="/img/favicon.ico">
     <script id="MPWidgets" src="https://mp.sthilary.org/widgets/dist/MPWidgets.js"></script>
-    <script>
-        (function () {
-            window.addEventListener("pageshow", function (event) {
-                if (event.persisted) {
-                    window.location.reload();
-                }
-            });
-        })();
-    </script>
-    <script>
-        (function () {
-            if (document.visibilityState === "visible") {
-                // Force a revalidation fetch to ensure cookies are sent
-                fetch(window.location.href, {
-                    method: "GET",
-                    credentials: "include",
-                    cache: "no-store"
-                }).then(() => {
-                    // noop — this forces cookie + auth context sync
-                });
-            }
-        })();
-    </script>
 </head>
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
