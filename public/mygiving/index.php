@@ -36,7 +36,7 @@
 </head>
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
-<mpp-my-giving hidesoftcredits="false"></mpp-my-giving>
+<mpp-my-contribution-statement></mpp-my-contribution-statement>
 
 </body>
 </html>
