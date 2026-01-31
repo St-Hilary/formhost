@@ -36,7 +36,6 @@
 </head>
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
-<mpp-user-login></mpp-user-login>
 <mpp-my-contribution-statement></mpp-my-contribution-statement>
 
 </body>
