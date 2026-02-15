@@ -9,11 +9,10 @@
     <title>St. Hilary Church - Making Jesus Matter to Everyone</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link rel="icon" type="image/ico" href="/img/favicon.ico">
-    <mpp-household hideaddhouseholdmember="false"></mpp-household>
 </head>
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
-<mpp-my-contribution-statement></mpp-my-contribution-statement>
+<mpp-household hideaddhouseholdmember="false"></mpp-household>
 
 </body>
 </html>
