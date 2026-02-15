@@ -28,6 +28,8 @@
 
         <h3>Click here to see <a href="https://forms.sthilary.org/groups/small.php">groups</a></h3>
         <h3>Click here to see <a href="https://forms.sthilary.org/events">events</a></h3>
+        <h3>Click here to see <a href="https://forms.sthilary.org/mygiving">My Giving</a></h3>
+        <h3>Click here to see <a href="https://forms.sthilary.org/myhousehold">My Household</a></h3>
     </div>
 </body>
 </html>
