@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link rel="icon" type="image/ico" href="/img/favicon.ico">
 
-    <script src="https://rebuilt-web-app.ngrok.io/widgets/rebuilt-widgets.js"></script>
+    <script src="https://custom.sthilary.org/widgets/rebuilt-widgets.js"></script>
 
 </head>
 <body>
