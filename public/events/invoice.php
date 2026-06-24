@@ -11,7 +11,7 @@
 <body>
 <img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
 
-<mpp-checkout paymentprocessortargeturl="https://don-prodprd1-functions01.azurewebsites.net/api/MPRedirect?origin=MP-IPW&tenant=vanco-faith-payer-QC1239-235-1&itemtype=payment&pcct=AC36FF4FFE"
+<mpp-checkout paymentprocessortargeturl="https://onrealm.org/StHilaryChurch/pay"
               backtoeventtargeturl="/events/details.php"></mpp-checkout>
 
 </body>
