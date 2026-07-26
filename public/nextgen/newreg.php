@@ -18,15 +18,20 @@
         body {
             font-family: 'Open Sans', Arial, sans-serif;
         }
+        /*
+         * Logo sits above the form and the form fills every remaining pixel of
+         * the viewport. Nothing flanks the iframe, so there is no dead strip
+         * where a scroll gesture lands on the parent page and does nothing.
+         */
         .page {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             height: 100%;
             background: #ffffff;
         }
         .brand {
             flex: 0 0 auto;
-            padding: 30px 40px 30px 50px;
+            padding: 20px 0 10px 50px;
             background: #ffffff;
         }
         .brand img {
@@ -34,7 +39,7 @@
         }
         .form-area {
             flex: 1 1 auto;
-            min-width: 0;
+            min-height: 0;
             background: #ffffff;
             overflow: hidden;
         }
@@ -53,13 +58,14 @@
             transform-origin: 0 0;
         }
 
-        /* Stack the logo above the form on narrow screens */
-        @media (max-width: 900px) {
-            .page {
-                flex-direction: column;
-            }
+        /* Give the form more room on short screens */
+        @media (max-height: 700px) {
             .brand {
-                padding: 20px 0 10px 30px;
+                padding: 10px 0 6px 30px;
+            }
+            .brand img {
+                width: 88px;
+                height: 88px;
             }
         }
     </style>

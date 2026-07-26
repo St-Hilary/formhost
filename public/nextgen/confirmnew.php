@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <meta http-equiv="refresh" content="10;url=https://tinyurl.com/nextgenreg26">
+    <meta http-equiv="refresh" content="10;url=https://forms.growthmethod.app/w3o-7b3Js2WHMY">
     <title>St. Hilary Church - Making Jesus Matter to Everyone</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link rel="icon" type="image/ico" href="/img/favicon.ico">
@@ -38,8 +38,6 @@
     </style>
 </head>
 <body>
-<img style="padding-top: 30px; padding-left: 50px;" src="/img/sthilary.png" width="128" height="128" />
-
 <div class="message">
     <p>You are now registered with St. Hilary - please use one of the other Kiosks to check your child in for the program.</p>
     <p class="blessing">God Bless!</p>
@@ -48,7 +46,7 @@
 
 <script>
     (function () {
-        var target = 'https://tinyurl.com/nextgenreg26';
+        var target = 'https://forms.growthmethod.app/w3o-7b3Js2WHMY';
         var remaining = 10;
         var el = document.getElementById('countdown');
 
