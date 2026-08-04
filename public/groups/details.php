@@ -14,32 +14,63 @@
 <mpp-group-details returnurl="/groups" hidesignuptab="true"></mpp-group-details>
 
 <script>
-    // Rename the "Contact this Group" tab/form to "Sign up for this group".
-    // The widget renders into an open shadow root, so we reach in and swap the
-    // label's text node once the widget has rendered.
+    // Relabel the "Contact this Group" tab/form as a sign-up.
+    // The widget renders into an open shadow root, so we reach in once it has
+    // rendered. Edit the strings below to change the wording.
     (function () {
-        var NEW_LABEL = 'Sign up for this group';
+        var LABELS = {
+            inquiryOptionLabel: 'Sign up for this group', // tab / form heading
+            contactGroupButtonText: 'Sign up'             // submit button
+            // The widget also uses inquiringButtonText ("Contacting...") while
+            // submitting and contactButtonSubmitAnotherText ("Submit Another
+            // Inquiry") after success. Add either key here to relabel it too.
+        };
 
-        function renameTab(root) {
+        var defaults = null;
+
+        function relabel(widget, root) {
             var tab = root.querySelector('#inquireTab');
             if (!tab) return false;
+
+            // Capture the widget's own wording before we overwrite it, so we can
+            // tell an untouched button from one the widget has put into another
+            // state (e.g. "Contacting...").
+            if (defaults === null && widget._i18n) {
+                defaults = {};
+                for (var key in LABELS) defaults[key] = widget._i18n[key];
+            }
+
+            // Patch the widget's label data so any later re-render or form reset
+            // uses the new wording too.
+            if (widget._i18n) {
+                for (var k in LABELS) widget._i18n[k] = LABELS[k];
+            }
+
             for (var i = 0; i < tab.childNodes.length; i++) {
                 var node = tab.childNodes[i];
                 if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
-                    if (node.textContent.trim() !== NEW_LABEL) node.textContent = NEW_LABEL;
-                    return true;
+                    if (node.textContent.trim() !== LABELS.inquiryOptionLabel) {
+                        node.textContent = LABELS.inquiryOptionLabel;
+                    }
+                    break;
                 }
             }
-            return false;
+
+            var button = root.querySelector('#contactGroupButton');
+            if (button && (!defaults || button.value === defaults.contactGroupButtonText)) {
+                button.value = LABELS.contactGroupButtonText;
+            }
+
+            return true;
         }
 
         function start() {
             var widget = document.querySelector('mpp-group-details');
             if (!widget || !widget.shadowRoot) return false;
             var root = widget.shadowRoot;
-            if (!renameTab(root)) return false;
+            if (!relabel(widget, root)) return false;
             // Re-apply if the widget re-renders (e.g. after an attribute change).
-            new MutationObserver(function () { renameTab(root); })
+            new MutationObserver(function () { relabel(widget, root); })
                 .observe(root, { childList: true, subtree: true });
             return true;
         }
