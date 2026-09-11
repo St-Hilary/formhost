@@ -1,10 +1,10 @@
 {
-  "require": {},
+  "require": {
+    "stripe/stripe-php": "^21.3"
+  },
   "config": {
     "vendor-dir": "vendor",
     "bin-dir": "vendor/bin",
     "document-root": "public"
   }
 }
-
-
