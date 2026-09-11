@@ -94,3 +94,6 @@ const AF_MP_DONOR_DEFAULTS   = [      // same values every recently created dono
     'Statement_Type_ID'      => 2,
     'Statement_Method_ID'    => 1,
 ];
+const AF_MP_CONGREGATION_ID  = 2;     // "St. Hilary School" - batches carry this so the gifts scope to the school
+const AF_MP_BATCH_ENTRY_TYPE = 10;    // Online Giving
+const AF_MP_BATCH_USAGE_TYPE = 1;     // Donations

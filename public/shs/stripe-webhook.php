@@ -45,9 +45,15 @@ function af_is_angel_fund(array $meta): bool
 function af_record_charge(\Stripe\StripeClient $stripe, \Stripe\Charge $charge, \Stripe\Customer $customer,
                           array $meta, ?string $subscriptionId, int $paymentNumber, int $paymentsTotal): array
 {
+    // Fee and net live on the charge's balance transaction. It is usually attached
+    // by the time the webhook fires, but fall back to looking it up by charge.
     $bt = $charge->balance_transaction;
     if (is_string($bt)) {
         $bt = $stripe->balanceTransactions->retrieve($bt);
+    }
+    if (!$bt) {
+        $found = $stripe->balanceTransactions->all(['source' => $charge->id, 'limit' => 1]);
+        $bt = $found->data[0] ?? null;
     }
     $pmd    = $charge->payment_method_details;
     $method = $pmd->type ?? 'card';

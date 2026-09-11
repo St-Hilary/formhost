@@ -164,6 +164,61 @@ function af_mp_donation_exists(MpClient $mp, string $transactionCode): ?int
     return !empty($rows[0]['Donation_ID']) ? (int) $rows[0]['Donation_ID'] : null;
 }
 
+/**
+ * The batch a gift belongs in: one per calendar day, coded to the school, so the
+ * Donations page shows these gifts when scoped to St. Hilary School and the
+ * nightly autobatch leaves them alone. Created on first use.
+ */
+function af_mp_batch_for(MpClient $mp, DateTimeImmutable $when, bool $isCard): int
+{
+    $day  = $when->setTimezone(new DateTimeZone(AF_TIMEZONE))->format('Y-m-d');
+    $name = "$day Angel Fund (Stripe)";
+
+    $rows = $mp->get('Batches', [
+        'select' => 'Batch_ID',
+        'filter' => 'Batch_Name = ' . MpClient::q($name),
+        'top'    => 1,
+    ]);
+    if (!empty($rows[0]['Batch_ID'])) {
+        return (int) $rows[0]['Batch_ID'];
+    }
+
+    $created = $mp->create('Batches', [[
+        'Batch_Name'           => $name,
+        'Setup_Date'           => $when->setTimezone(new DateTimeZone(AF_TIMEZONE))->format('Y-m-d\TH:i:s'),
+        'Batch_Total'          => 0,
+        'Item_Count'           => 0,
+        'Batch_Entry_Type_ID'  => AF_MP_BATCH_ENTRY_TYPE,
+        'Batch_Usage_Type_ID'  => AF_MP_BATCH_USAGE_TYPE,
+        'Default_Program'      => AF_MP_PROGRAM_ID,
+        'Congregation_ID'      => AF_MP_CONGREGATION_ID,
+        'Default_Payment_Type' => $isCard ? AF_MP_PAYMENT_TYPE_CARD : AF_MP_PAYMENT_TYPE_ACH,
+        'Currency'             => 'USD',
+    ]]);
+    if (empty($created[0]['Batch_ID'])) {
+        throw new MpApiException('Batch create returned no Batch_ID: ' . json_encode($created));
+    }
+    return (int) $created[0]['Batch_ID'];
+}
+
+/** Bump the batch's running total and item count after a donation is added. */
+function af_mp_batch_add(MpClient $mp, int $batchId, float $amount): void
+{
+    $rows = $mp->get('Batches', [
+        'select' => 'Batch_ID, Batch_Total, Item_Count',
+        'filter' => "Batch_ID = $batchId",
+        'top'    => 1,
+    ]);
+    if (empty($rows[0])) {
+        return;
+    }
+    $mp->update('Batches', [[
+        'Batch_ID'    => $batchId,
+        'Batch_Total' => round((float) $rows[0]['Batch_Total'] + $amount, 2),
+        'Item_Count'  => (int) $rows[0]['Item_Count'] + 1,
+    ]]);
+}
+
 // ---- notes -----------------------------------------------------------------
 
 /** The block the office is used to seeing on unmatched gifts (same layout as MP eGiving). */
@@ -276,9 +331,13 @@ function af_mp_post_gift(MpClient $mp, array $gift): array
     /** @var DateTimeImmutable $when */
     $when = $gift['date'];
 
-    // 3. Donation
+    // 3. Donation, inside today's school-coded batch
+    $amount  = round($gift['amount_cents'] / 100, 2);
+    $batchId = af_mp_batch_for($mp, $when, $isCard);
+
     $donation = $mp->create('Donations', [[
         'Donor_ID'             => $donorId,
+        'Batch_ID'             => $batchId,
         'Donation_Amount'      => round($gift['amount_cents'] / 100, 2),
         'Donation_Date'        => $when->setTimezone(new DateTimeZone(AF_TIMEZONE))->format('Y-m-d\TH:i:s'),
         'Payment_Type_ID'      => $isCard ? AF_MP_PAYMENT_TYPE_CARD : AF_MP_PAYMENT_TYPE_ACH,
@@ -296,6 +355,7 @@ function af_mp_post_gift(MpClient $mp, array $gift): array
         throw new MpApiException('Donation create returned no Donation_ID: ' . json_encode($donation));
     }
     $donationId = (int) $donation[0]['Donation_ID'];
+    af_mp_batch_add($mp, $batchId, $amount);
 
     // 4. Distribution
     $dist = $mp->create('Donation_Distributions', [[
@@ -314,5 +374,6 @@ function af_mp_post_gift(MpClient $mp, array $gift): array
         'contact_id'      => $contactId,
         'matched'         => $matched,
         'how'             => $how,
+        'batch_id'        => $batchId,
     ];
 }
