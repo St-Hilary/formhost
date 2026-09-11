@@ -144,7 +144,15 @@ try {
             'postal_code' => $zip,
             'country'     => $countryCode,
         ]),
-        'metadata' => ['affiliation' => $affiliation, 'campaign' => $metadata['campaign']],
+        'metadata' => [
+            'affiliation' => $affiliation,
+            'campaign'    => $metadata['campaign'],
+            'first_name'  => $firstName,
+            'last_name'   => $lastName,
+            'prefix'      => $prefix,
+            'suffix'      => $suffix,
+            'country'     => $country,
+        ],
     ]);
 
     if ($schedule === 'one_time') {

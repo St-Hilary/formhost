@@ -82,3 +82,15 @@ function af_month_range(array $dates): string
     $last  = end($dates)->format('F Y');
     return $first === $last ? $first : "$first through $last";
 }
+
+// ---- MinistryPlatform settings ------------------------------------------
+
+const AF_MP_PROGRAM_ID       = 332;   // "School Angel Fund"
+const AF_MP_DEFAULT_DONOR_ID = 1;     // "***Default, Contact" - used when no donor match
+const AF_MP_PAYMENT_TYPE_CARD = 4;    // Credit Card
+const AF_MP_PAYMENT_TYPE_ACH  = 5;    // ACH/EFT
+const AF_MP_DONOR_DEFAULTS   = [      // same values every recently created donor has
+    'Statement_Frequency_ID' => 1,
+    'Statement_Type_ID'      => 2,
+    'Statement_Method_ID'    => 1,
+];
