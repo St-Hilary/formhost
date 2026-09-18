@@ -32,6 +32,7 @@
         <h3>Click here to see <a href="https://forms.sthilary.org/myhousehold">My Household</a></h3>
         <h3>Click here to see <a href="https://forms.sthilary.org/prayerwall">Prayer Wall</a></h3>
         <h3>Click here to see <a href="https://forms.sthilary.org/nextgen/newreg.php">Next Gen New Reg</a></h3>
-        <h3>Click here to see <a href="https://mp.sthilary.org/mp/308-1337">Historical Attendance Report</a></h3>    </div>
+        <h3>Click here to see <a href="https://mp.sthilary.org/mp/308-1337">Historical Attendance Report</a></h3>
+    </div>
 </body>
 </html>
